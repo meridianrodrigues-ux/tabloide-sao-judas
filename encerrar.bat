@@ -1,8 +1,7 @@
 @echo off
-chcp 65001 > nul
 cls
 echo ======================================================================
-echo    TABLOIDE SÃO JUDAS - FINALIZADOR LIMPO DE SERVIÇOS
+echo    TABLOIDE SAO JUDAS - FINALIZADOR LIMPO DE SERVICOS
 echo ======================================================================
 echo.
 
@@ -20,7 +19,6 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr :5173 ^| findstr LISTENING') 
 
 echo.
 echo ======================================================================
-echo   Todos os serviços e portas foram liberados com sucesso!
+echo   Todos os servicos e portas foram liberados com sucesso!
 echo ======================================================================
 echo.
-timeout /t 3 > nul

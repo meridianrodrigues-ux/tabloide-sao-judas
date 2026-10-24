@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Montserrat', system-ui, sans-serif;
+  
+  --color-brand-red: #D32F2F;
+  --color-brand-red-dark: #B71C1C;
+  --color-brand-red-surface: #FEF2F2;
+  
+  --color-promo-yellow: #FBC02D;
+  --color-promo-amber: #F59E0B;
+  --color-promo-amber-surface: #FFFBEB;
+  
+  --color-club-indigo: #4F46E5;
+  --color-club-indigo-surface: #EEF2FF;
+  --color-club-indigo-border: #C7D2FE;
+  
+  --color-sync-emerald: #059669;
+  --color-sync-emerald-surface: #ECFDF5;
+  
+  --color-alert-orange: #EA580C;
+  --color-alert-orange-surface: #FFF7ED;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #212121;
+    overflow-x: hidden;
+  }
+
+  /* Formatação numérica padrão de varejo */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Scrollbar sutil para o catálogo de ofertas */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
